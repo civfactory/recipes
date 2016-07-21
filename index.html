@@ -22,6 +22,8 @@ table.item-list td+td { text-align: left; min-width:0px; padding-right:15px; }
 table.item-list td+td+td { padding-right: 0px; }
 td.prod-time, td.weight { text-align:center; }
 span.item-section { font-style: italic; }
+div.factory-header div { float:left; }
+div.factory-header div+div { float:left; padding-top:22px; padding-left:20px; }
 </style>
 </head>
 <body>
@@ -44,6 +46,26 @@ span.item-section { font-style: italic; }
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<span class=item-section>Ingredients:</span>
+<table class=item-list>
+<tr>
+<td>1024</td><td>x</td><td>Any Wood Plank</td></tr>
+<tr>
+<td>32</td><td>x</td><td>Bread</td></tr>
+<tr>
+<td>256</td><td>x</td><td>Stone</td></tr>
+</table>
+</td>
+<td class=prod-time>0 sec</td>
+<td>SETUP</td>
+<td>
+Setup Factory
+</td>
 </tr>
 <tr>
 <td>
@@ -106,7 +128,7 @@ Bake Bread
 <span class=item-section>Ingredients:</span>
 <table class=item-list>
 <tr>
-<td>64</td><td>x</td><td>Any Wood Log</td></tr>
+<td>64</td><td>x</td><td>Any Normal Wood Log</td></tr>
 </table>
 <span class=item-section>Fuel:</span>
 <table class=item-list>
@@ -219,7 +241,10 @@ Repair Factory
 <td class=prod-time>10 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-stone-smelter'></a>
+<a href='#stone-smelter'>
 Upgrade to Stone Smelter
+</a>
 </td>
 </tr>
 <tr>
@@ -246,7 +271,10 @@ Upgrade to Stone Smelter
 <td class=prod-time>10 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-farmstead-factory'></a>
+<a href='#farmstead-factory'>
 Upgrade to Farmstead Factory
+</a>
 </td>
 </tr>
 <tr>
@@ -271,7 +299,10 @@ Upgrade to Farmstead Factory
 <td class=prod-time>10 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-blacksmith'></a>
+<a href='#blacksmith'>
 Upgrade to Blacksmith
+</a>
 </td>
 </tr>
 <tr>
@@ -294,7 +325,10 @@ Upgrade to Blacksmith
 <td class=prod-time>10 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-laboratory'></a>
+<a href='#laboratory'>
 Upgrade to Laboratory
+</a>
 </td>
 </tr>
 <tr>
@@ -304,7 +338,7 @@ Upgrade to Laboratory
 <span class=item-section>Ingredients:</span>
 <table class=item-list>
 <tr>
-<td>512</td><td>x</td><td>Any Wood Log</td></tr>
+<td>512</td><td>x</td><td>Any Normal Wood Log</td></tr>
 </table>
 <span class=item-section>Fuel:</span>
 <table class=item-list>
@@ -315,7 +349,10 @@ Upgrade to Laboratory
 <td class=prod-time>10 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-wood-processor'></a>
+<a href='#wood-processor'>
 Upgrade to Wood Processor
+</a>
 </td>
 </tr>
 <tr>
@@ -336,7 +373,10 @@ Upgrade to Wood Processor
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-basic-forge'></a>
+<a href='#basic-forge'>
 Upgrade to Basic Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -359,7 +399,10 @@ Upgrade to Basic Forge
 <td class=prod-time>5 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-basic-fortification'></a>
+<a href='#basic-fortifications'>
 Upgrade to Basic Fortification
+</a>
 </td>
 </tr>
 </table>
@@ -367,7 +410,11 @@ Upgrade to Basic Fortification
 <div>
 <a id=enchanting></a>
 <h2>Enchanting</h2>
-<h3>Basic Forge</h3>
+<a id=basic-forge></a>
+<div class=factory-header>
+<div><h3>Basic Forge</div></h3>
+<div>(<a href='#upgrade-to-basic-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -606,7 +653,10 @@ Enchant Sword with Sharpness
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-ember-forge'></a>
+<a href='#ember-forge'>
 Upgrade to Ember Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -627,7 +677,10 @@ Upgrade to Ember Forge
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-river-forge'></a>
+<a href='#river-forge'>
 Upgrade to River Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -648,7 +701,10 @@ Upgrade to River Forge
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-magic-forge'></a>
+<a href='#magic-forge'>
 Upgrade to Magic Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -669,7 +725,10 @@ Upgrade to Magic Forge
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-mithril-forge'></a>
+<a href='#mithril-forge'>
 Upgrade to Mithril Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -690,7 +749,10 @@ Upgrade to Mithril Forge
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-archer-forge'></a>
+<a href='#archer-forge'>
 Upgrade to Archer Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -711,7 +773,10 @@ Upgrade to Archer Forge
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-dagger-forge'></a>
+<a href='#dagger-forge'>
 Upgrade to Dagger Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -732,7 +797,10 @@ Upgrade to Dagger Forge
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-quick-forge'></a>
+<a href='#quick-forge'>
 Upgrade to Quick Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -753,7 +821,10 @@ Upgrade to Quick Forge
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-rock-forge'></a>
+<a href='#rock-forge'>
 Upgrade to Rock Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -784,12 +855,18 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Archer Forge / Marksman Forge / Sniper Forge</h3>
+<div class=factory-header>
+<div><h3>Archer Forge / Marksman Forge / Sniper Forge</div></h3>
+<div>(<a href='#upgrade-to-archer-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
 </tr>
-<tr><th colspan=5>Archer Forge</th></tr>
+<tr><th colspan=5>
+<a id=archer-forge></a>
+Archer Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -970,7 +1047,10 @@ Enchant Boots with Projectile Protection I
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-marksman-forge'></a>
+<a href='#marksman-forge'>
 Upgrade to Marksman Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -998,7 +1078,10 @@ Upgrade to Marksman Forge
 Repair Factory
 </td>
 </tr>
-<tr><th colspan=5>Marksman Forge</th></tr>
+<tr><th colspan=5>
+<a id=marksman-forge></a>
+Marksman Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -1314,7 +1397,10 @@ Enchant Bow with Punch I
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-sniper-forge'></a>
+<a href='#sniper-forge'>
 Upgrade to Sniper Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -1342,7 +1428,10 @@ Upgrade to Sniper Forge
 Repair Advanced Factory
 </td>
 </tr>
-<tr><th colspan=5>Sniper Forge</th></tr>
+<tr><th colspan=5>
+<a id=sniper-forge></a>
+Sniper Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -1533,12 +1622,18 @@ Repair Expert Factory
 </table>
 </div>
 <div>
-<h3>Dagger Forge / Sword Forge / Blade Forge</h3>
+<div class=factory-header>
+<div><h3>Dagger Forge / Sword Forge / Blade Forge</div></h3>
+<div>(<a href='#upgrade-to-dagger-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
 </tr>
-<tr><th colspan=5>Dagger Forge</th></tr>
+<tr><th colspan=5>
+<a id=dagger-forge></a>
+Dagger Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -1665,7 +1760,10 @@ Enchant Sword with Smite II
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-sword-forge'></a>
+<a href='#sword-forge'>
 Upgrade to Sword Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -1693,7 +1791,10 @@ Upgrade to Sword Forge
 Repair Factory
 </td>
 </tr>
-<tr><th colspan=5>Sword Forge</th></tr>
+<tr><th colspan=5>
+<a id=sword-forge></a>
+Sword Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -1847,7 +1948,10 @@ Enchant Sword with Knockback I
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-blade-forge'></a>
+<a href='#blade-forge'>
 Upgrade to Blade Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -1875,7 +1979,10 @@ Upgrade to Blade Forge
 Repair Advanced Factory
 </td>
 </tr>
-<tr><th colspan=5>Blade Forge</th></tr>
+<tr><th colspan=5>
+<a id=blade-forge></a>
+Blade Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -1985,12 +2092,18 @@ Repair Expert Factory
 </table>
 </div>
 <div>
-<h3>Ember Forge / Magma Forge</h3>
+<div class=factory-header>
+<div><h3>Ember Forge / Magma Forge</div></h3>
+<div>(<a href='#upgrade-to-ember-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
 </tr>
-<tr><th colspan=5>Ember Forge</th></tr>
+<tr><th colspan=5>
+<a id=ember-forge></a>
+Ember Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -2360,7 +2473,10 @@ Enchant Sword with Fire Aspect I
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-magma-forge'></a>
+<a href='#magma-forge'>
 Upgrade to Magma Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -2388,7 +2504,10 @@ Upgrade to Magma Forge
 Repair Factory
 </td>
 </tr>
-<tr><th colspan=5>Magma Forge</th></tr>
+<tr><th colspan=5>
+<a id=magma-forge></a>
+Magma Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -2795,12 +2914,18 @@ Repair Advanced Factory
 </table>
 </div>
 <div>
-<h3>Magic Forge / Arcane Forge</h3>
+<div class=factory-header>
+<div><h3>Magic Forge / Arcane Forge</div></h3>
+<div>(<a href='#upgrade-to-magic-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
 </tr>
-<tr><th colspan=5>Magic Forge</th></tr>
+<tr><th colspan=5>
+<a id=magic-forge></a>
+Magic Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -2954,7 +3079,10 @@ Enchant Sword with Bane of Arthropods III
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-arcane-forge'></a>
+<a href='#arcane-forge'>
 Upgrade to Arcane Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -2982,7 +3110,10 @@ Upgrade to Arcane Forge
 Repair Factory
 </td>
 </tr>
-<tr><th colspan=5>Arcane Forge</th></tr>
+<tr><th colspan=5>
+<a id=arcane-forge></a>
+Arcane Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -3227,12 +3358,18 @@ Repair Advanced Factory
 </table>
 </div>
 <div>
-<h3>Mithril Forge / Titanium Forge / Meteor Forge</h3>
+<div class=factory-header>
+<div><h3>Mithril Forge / Titanium Forge / Meteor Forge</div></h3>
+<div>(<a href='#upgrade-to-mithril-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
 </tr>
-<tr><th colspan=5>Mithril Forge</th></tr>
+<tr><th colspan=5>
+<a id=mithril-forge></a>
+Mithril Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -3494,7 +3631,10 @@ Enchant Chestplate with Thorns I
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-titanium-forge'></a>
+<a href='#titanium-forge'>
 Upgrade to Titanium Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -3522,7 +3662,10 @@ Upgrade to Titanium Forge
 Repair Factory
 </td>
 </tr>
-<tr><th colspan=5>Titanium Forge</th></tr>
+<tr><th colspan=5>
+<a id=titanium-forge></a>
+Titanium Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -4000,7 +4143,10 @@ Enchant Chestplate with Thorns II
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-meteor-forge'></a>
+<a href='#meteor-forge'>
 Upgrade to Meteor Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -4028,7 +4174,10 @@ Upgrade to Meteor Forge
 Repair Advanced Factory
 </td>
 </tr>
-<tr><th colspan=5>Meteor Forge</th></tr>
+<tr><th colspan=5>
+<a id=meteor-forge></a>
+Meteor Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -4300,12 +4449,18 @@ Repair Expert Factory
 </table>
 </div>
 <div>
-<h3>Quick Forge / Rapid Forge / Sonic Forge</h3>
+<div class=factory-header>
+<div><h3>Quick Forge / Rapid Forge / Sonic Forge</div></h3>
+<div>(<a href='#upgrade-to-quick-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
 </tr>
-<tr><th colspan=5>Quick Forge</th></tr>
+<tr><th colspan=5>
+<a id=quick-forge></a>
+Quick Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -4486,7 +4641,10 @@ Enchant Shovel with Efficiency II
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-rapid-forge'></a>
+<a href='#rapid-forge'>
 Upgrade to Rapid Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -4514,7 +4672,10 @@ Upgrade to Rapid Forge
 Repair Factory
 </td>
 </tr>
-<tr><th colspan=5>Rapid Forge</th></tr>
+<tr><th colspan=5>
+<a id=rapid-forge></a>
+Rapid Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -4695,7 +4856,10 @@ Enchant Shovel with Efficiency IV
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-sonic-forge'></a>
+<a href='#sonic-forge'>
 Upgrade to Sonic Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -4723,7 +4887,10 @@ Upgrade to Sonic Forge
 Repair Advanced Factory
 </td>
 </tr>
-<tr><th colspan=5>Sonic Forge</th></tr>
+<tr><th colspan=5>
+<a id=sonic-forge></a>
+Sonic Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -4833,12 +5000,18 @@ Repair Expert Factory
 </table>
 </div>
 <div>
-<h3>River Forge / Ocean Forge</h3>
+<div class=factory-header>
+<div><h3>River Forge / Ocean Forge</div></h3>
+<div>(<a href='#upgrade-to-river-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
 </tr>
-<tr><th colspan=5>River Forge</th></tr>
+<tr><th colspan=5>
+<a id=river-forge></a>
+River Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -4965,7 +5138,10 @@ Enchant Boots with Frost Walker I
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-ocean-forge'></a>
+<a href='#ocean-forge'>
 Upgrade to Ocean Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -4993,7 +5169,10 @@ Upgrade to Ocean Forge
 Repair Factory
 </td>
 </tr>
-<tr><th colspan=5>Ocean Forge</th></tr>
+<tr><th colspan=5>
+<a id=ocean-forge></a>
+Ocean Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -5157,12 +5336,18 @@ Repair Advanced Factory
 </table>
 </div>
 <div>
-<h3>Rock Forge / Metal Forge / Carbon Forge</h3>
+<div class=factory-header>
+<div><h3>Rock Forge / Metal Forge / Carbon Forge</div></h3>
+<div>(<a href='#upgrade-to-rock-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
 </tr>
-<tr><th colspan=5>Rock Forge</th></tr>
+<tr><th colspan=5>
+<a id=rock-forge></a>
+Rock Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -5451,7 +5636,10 @@ Enchant Bow with Unbreaking I
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-metal-forge'></a>
+<a href='#metal-forge'>
 Upgrade to Metal Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -5479,7 +5667,10 @@ Upgrade to Metal Forge
 Repair Factory
 </td>
 </tr>
-<tr><th colspan=5>Metal Forge</th></tr>
+<tr><th colspan=5>
+<a id=metal-forge></a>
+Metal Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -5768,7 +5959,10 @@ Enchant Bow with Unbreaking II
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-carbon-forge'></a>
+<a href='#carbon-forge'>
 Upgrade to Carbon Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -5796,7 +5990,10 @@ Upgrade to Carbon Forge
 Repair Advanced Factory
 </td>
 </tr>
-<tr><th colspan=5>Carbon Forge</th></tr>
+<tr><th colspan=5>
+<a id=carbon-forge></a>
+Carbon Forge
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -6097,12 +6294,18 @@ Repair Expert Factory
 <div>
 <a id=fortifications></a>
 <h2>Fortifications</h2>
-<h3>Basic Fortifications / Intermediate Fortifications / Advanced Fortifications</h3>
+<div class=factory-header>
+<div><h3>Basic Fortifications / Intermediate Fortifications / Advanced Fortifications</div></h3>
+<div>(<a href='#upgrade-to-basic-fortification'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
 </tr>
-<tr><th colspan=5>Basic Fortifications</th></tr>
+<tr><th colspan=5>
+<a id=basic-fortifications></a>
+Basic Fortifications
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -6488,7 +6691,10 @@ Produce decent reinforcement
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-intermediate-fortification'></a>
+<a href='#intermediate-fortifications'>
 Upgrade to Intermediate Fortification
+</a>
 </td>
 </tr>
 <tr>
@@ -6516,7 +6722,10 @@ Upgrade to Intermediate Fortification
 Repair Factory
 </td>
 </tr>
-<tr><th colspan=5>Intermediate Fortifications</th></tr>
+<tr><th colspan=5>
+<a id=intermediate-fortifications></a>
+Intermediate Fortifications
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -6651,7 +6860,10 @@ Produce Bracers
 <td class=prod-time>12 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-advanced-fortification'></a>
+<a href='#advanced-fortifications'>
 Upgrade to Advanced Fortification
+</a>
 </td>
 </tr>
 <tr>
@@ -6679,7 +6891,10 @@ Upgrade to Advanced Fortification
 Repair Advanced Factory
 </td>
 </tr>
-<tr><th colspan=5>Advanced Fortifications</th></tr>
+<tr><th colspan=5>
+<a id=advanced-fortifications></a>
+Advanced Fortifications
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -6768,7 +6983,11 @@ Repair Expert Factory
 <div>
 <a id=blacksmith></a>
 <h2>Blacksmith</h2>
-<h3>Blacksmith</h3>
+<a id=blacksmith></a>
+<div class=factory-header>
+<div><h3>Blacksmith</div></h3>
+<div>(<a href='#upgrade-to-blacksmith'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -6945,7 +7164,10 @@ Repair Factory
 <td class=prod-time>30 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-iron-forge'></a>
+<a href='#iron-forge'>
 Upgrade to Iron Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -6974,13 +7196,20 @@ Upgrade to Iron Forge
 <td class=prod-time>15 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-iron-equipment-forge'></a>
+<a href='#iron-equipment-forge'>
 Upgrade to Iron Equipment Forge
+</a>
 </td>
 </tr>
 </table>
 </div>
 <div>
-<h3>Iron Equipment Forge</h3>
+<a id=iron-equipment-forge></a>
+<div class=factory-header>
+<div><h3>Iron Equipment Forge</div></h3>
+<div>(<a href='#upgrade-to-iron-equipment-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -7286,7 +7515,10 @@ Repair Factory
 <td class=prod-time>30 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-gold-equipment-forge'></a>
+<a href='#gold-equipment-forge'>
 Upgrade to Gold Equipment Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -7313,13 +7545,20 @@ Upgrade to Gold Equipment Forge
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-diamond-equipment-forge'></a>
+<a href='#diamond-equipment-forge'>
 Upgrade to Diamond Equipment Forge
+</a>
 </td>
 </tr>
 </table>
 </div>
 <div>
-<h3>Diamond Equipment Forge</h3>
+<a id=diamond-equipment-forge></a>
+<div class=factory-header>
+<div><h3>Diamond Equipment Forge</div></h3>
+<div>(<a href='#upgrade-to-diamond-equipment-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -7473,7 +7712,10 @@ Repair Advanced Factory
 <td class=prod-time>2 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-diamond-armour-forge'></a>
+<a href='#diamond-armour-forge'>
 Upgrade to Diamond Armour Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -7500,13 +7742,20 @@ Upgrade to Diamond Armour Forge
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-diamond-tools-forge'></a>
+<a href='#diamond-tools-forge'>
 Upgrade to Diamond Tools Forge
+</a>
 </td>
 </tr>
 </table>
 </div>
 <div>
-<h3>Diamond Armour Forge</h3>
+<a id=diamond-armour-forge></a>
+<div class=factory-header>
+<div><h3>Diamond Armour Forge</div></h3>
+<div>(<a href='#upgrade-to-diamond-armour-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -7664,7 +7913,11 @@ Repair Expert Factory
 </table>
 </div>
 <div>
-<h3>Diamond Tools Forge</h3>
+<a id=diamond-tools-forge></a>
+<div class=factory-header>
+<div><h3>Diamond Tools Forge</div></h3>
+<div>(<a href='#upgrade-to-diamond-tools-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -7822,7 +8075,11 @@ Repair Expert Factory
 </table>
 </div>
 <div>
-<h3>Gold Equipment Forge</h3>
+<a id=gold-equipment-forge></a>
+<div class=factory-header>
+<div><h3>Gold Equipment Forge</div></h3>
+<div>(<a href='#upgrade-to-gold-equipment-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -7978,7 +8235,10 @@ Repair Factory
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-gold-armour-forge'></a>
+<a href='#gold-armour-forge'>
 Upgrade to Gold Armour Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -8007,13 +8267,20 @@ Upgrade to Gold Armour Forge
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-gold-tools-forge'></a>
+<a href='#gold-tools-forge'>
 Upgrade to Gold Tools Forge
+</a>
 </td>
 </tr>
 </table>
 </div>
 <div>
-<h3>Gold Armour Forge</h3>
+<a id=gold-armour-forge></a>
+<div class=factory-header>
+<div><h3>Gold Armour Forge</div></h3>
+<div>(<a href='#upgrade-to-gold-armour-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -8171,7 +8438,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Gold Tools Forge</h3>
+<a id=gold-tools-forge></a>
+<div class=factory-header>
+<div><h3>Gold Tools Forge</div></h3>
+<div>(<a href='#upgrade-to-gold-tools-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -8329,7 +8600,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Iron Forge</h3>
+<a id=iron-forge></a>
+<div class=factory-header>
+<div><h3>Iron Forge</div></h3>
+<div>(<a href='#upgrade-to-iron-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -8460,7 +8735,10 @@ Repair Factory
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-steel-forge'></a>
+<a href='#steel-forge'>
 Upgrade to Steel Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -8493,13 +8771,20 @@ Upgrade to Steel Forge
 <td class=prod-time>30 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-rail-factory'></a>
+<a href='#rail-factory'>
 Upgrade to Rail Factory
+</a>
 </td>
 </tr>
 </table>
 </div>
 <div>
-<h3>Rail Factory</h3>
+<a id=rail-factory></a>
+<div class=factory-header>
+<div><h3>Rail Factory</div></h3>
+<div>(<a href='#upgrade-to-rail-factory'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -8640,7 +8925,11 @@ Repair Advanced Factory
 </table>
 </div>
 <div>
-<h3>Steel Forge</h3>
+<a id=steel-forge></a>
+<div class=factory-header>
+<div><h3>Steel Forge</div></h3>
+<div>(<a href='#upgrade-to-steel-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -8827,7 +9116,11 @@ Repair Advanced Factory
 <div>
 <a id=agriculture-and-xp-production></a>
 <h2>Agriculture and XP Production</h2>
-<h3>Farmstead Factory</h3>
+<a id=farmstead-factory></a>
+<div class=factory-header>
+<div><h3>Farmstead Factory</div></h3>
+<div>(<a href='#upgrade-to-farmstead-factory'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -8964,7 +9257,10 @@ Repair Factory
 <td class=prod-time>2 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-bakery'></a>
+<a href='#bakery'>
 Upgrade to Bakery
+</a>
 </td>
 </tr>
 <tr>
@@ -8999,7 +9295,10 @@ Upgrade to Bakery
 <td class=prod-time>2 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-grill'></a>
+<a href='#grill'>
 Upgrade to Grill
+</a>
 </td>
 </tr>
 <tr>
@@ -9030,7 +9329,10 @@ Upgrade to Grill
 <td class=prod-time>2 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-soup-kitchen'></a>
+<a href='#soup-kitchen'>
 Upgrade to Soup Kitchen
+</a>
 </td>
 </tr>
 <tr>
@@ -9061,7 +9363,10 @@ Upgrade to Soup Kitchen
 <td class=prod-time>2 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-bio-lab'></a>
+<a href='#bio-lab'>
 Upgrade to Bio Lab
+</a>
 </td>
 </tr>
 <tr>
@@ -9084,7 +9389,10 @@ Upgrade to Bio Lab
 <td class=prod-time>30 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-animal-husbandry-factory'></a>
+<a href='#animal-husbandry-factory'>
 Upgrade to Animal Husbandry Factory
+</a>
 </td>
 </tr>
 <tr>
@@ -9105,7 +9413,10 @@ Upgrade to Animal Husbandry Factory
 <td class=prod-time>30 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-wool-processing'></a>
+<a href='#wool-processing'>
 Upgrade to Wool Processing
+</a>
 </td>
 </tr>
 <tr>
@@ -9115,7 +9426,7 @@ Upgrade to Wool Processing
 <span class=item-section>Ingredients:</span>
 <table class=item-list>
 <tr>
-<td>1024</td><td>x</td><td>Any Wood Log</td></tr>
+<td>1024</td><td>x</td><td>Any Normal Wood Log</td></tr>
 <tr>
 <td>180</td><td>x</td><td>Aether</td></tr>
 </table>
@@ -9128,13 +9439,20 @@ Upgrade to Wool Processing
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-apprentice-transmuter'></a>
+<a href='#apprentice-transmuter'>
 Upgrade to Apprentice Transmuter
+</a>
 </td>
 </tr>
 </table>
 </div>
 <div>
-<h3>Animal Husbandry Factory</h3>
+<a id=animal-husbandry-factory></a>
+<div class=factory-header>
+<div><h3>Animal Husbandry Factory</div></h3>
+<div>(<a href='#upgrade-to-animal-husbandry-factory'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -9250,12 +9568,18 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Apprentice Transmuter / Adept Transmuter / Grandmaster Transmuter</h3>
+<div class=factory-header>
+<div><h3>Apprentice Transmuter / Adept Transmuter / Grandmaster Transmuter</div></h3>
+<div>(<a href='#upgrade-to-apprentice-transmuter'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
 </tr>
-<tr><th colspan=5>Apprentice Transmuter</th></tr>
+<tr><th colspan=5>
+<a id=apprentice-transmuter></a>
+Apprentice Transmuter
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -9269,7 +9593,7 @@ Repair Factory
 <tr>
 <td>32</td><td>x</td><td>Nether Wart</td></tr>
 <tr>
-<td>16</td><td>x</td><td>Any Wood Log</td></tr>
+<td>16</td><td>x</td><td>Any Normal Wood Log</td></tr>
 <tr>
 <td>4</td><td>x</td><td>Aether</td></tr>
 <tr>
@@ -9302,7 +9626,7 @@ Aspen Enrichment
 <tr>
 <td>64</td><td>x</td><td>Carrot</td></tr>
 <tr>
-<td>16</td><td>x</td><td>Any Wood Log</td></tr>
+<td>16</td><td>x</td><td>Any Normal Wood Log</td></tr>
 <tr>
 <td>4</td><td>x</td><td>Aether</td></tr>
 </table>
@@ -9331,7 +9655,7 @@ Cypress Enrichment
 <tr>
 <td>64</td><td>x</td><td>Potato</td></tr>
 <tr>
-<td>16</td><td>x</td><td>Any Wood Log</td></tr>
+<td>16</td><td>x</td><td>Any Normal Wood Log</td></tr>
 <tr>
 <td>4</td><td>x</td><td>Aether</td></tr>
 <tr>
@@ -9371,7 +9695,10 @@ Pine Enrichment
 <td class=prod-time>2 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-adept-transmuter'></a>
+<a href='#adept-transmuter'>
 Upgrade to Adept Transmuter
+</a>
 </td>
 </tr>
 <tr>
@@ -9399,7 +9726,10 @@ Upgrade to Adept Transmuter
 Repair Factory
 </td>
 </tr>
-<tr><th colspan=5>Adept Transmuter</th></tr>
+<tr><th colspan=5>
+<a id=adept-transmuter></a>
+Adept Transmuter
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -9522,7 +9852,10 @@ Compacted Item</td></tr>
 <td class=prod-time>4 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-grandmaster-transmuter'></a>
+<a href='#grandmaster-transmuter'>
 Upgrade to Grandmaster Transmuter
+</a>
 </td>
 </tr>
 <tr>
@@ -9550,7 +9883,10 @@ Upgrade to Grandmaster Transmuter
 Repair Advanced Factory
 </td>
 </tr>
-<tr><th colspan=5>Grandmaster Transmuter</th></tr>
+<tr><th colspan=5>
+<a id=grandmaster-transmuter></a>
+Grandmaster Transmuter
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -9696,7 +10032,11 @@ Repair Expert Factory
 </table>
 </div>
 <div>
-<h3>Bakery</h3>
+<a id=bakery></a>
+<div class=factory-header>
+<div><h3>Bakery</div></h3>
+<div>(<a href='#upgrade-to-bakery'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -9901,7 +10241,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Bio Lab</h3>
+<a id=bio-lab></a>
+<div class=factory-header>
+<div><h3>Bio Lab</div></h3>
+<div>(<a href='#upgrade-to-bio-lab'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -10057,7 +10401,10 @@ Repair Factory
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-grass-gardening'></a>
+<a href='#grass-gardening'>
 Upgrade to Grass Gardening
+</a>
 </td>
 </tr>
 <tr>
@@ -10080,7 +10427,10 @@ Upgrade to Grass Gardening
 <td class=prod-time>30 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-flower-gardening'></a>
+<a href='#flower-gardening'>
 Upgrade to Flower Gardening
+</a>
 </td>
 </tr>
 <tr>
@@ -10101,7 +10451,10 @@ Upgrade to Flower Gardening
 <td class=prod-time>30 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-tree-mutator'></a>
+<a href='#tree-mutator'>
 Upgrade to Tree Mutator
+</a>
 </td>
 </tr>
 <tr>
@@ -10126,13 +10479,20 @@ Upgrade to Tree Mutator
 <td class=prod-time>30 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-organic-block-factory'></a>
+<a href='#organic-block-factory'>
 Upgrade to Organic Block Factory
+</a>
 </td>
 </tr>
 </table>
 </div>
 <div>
-<h3>Flower Gardening</h3>
+<a id=flower-gardening></a>
+<div class=factory-header>
+<div><h3>Flower Gardening</div></h3>
+<div>(<a href='#upgrade-to-flower-gardening'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -10250,7 +10610,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Grass Gardening</h3>
+<a id=grass-gardening></a>
+<div class=factory-header>
+<div><h3>Grass Gardening</div></h3>
+<div>(<a href='#upgrade-to-grass-gardening'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -10458,7 +10822,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Organic Block Factory</h3>
+<a id=organic-block-factory></a>
+<div class=factory-header>
+<div><h3>Organic Block Factory</div></h3>
+<div>(<a href='#upgrade-to-organic-block-factory'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -10566,7 +10934,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Tree Mutator</h3>
+<a id=tree-mutator></a>
+<div class=factory-header>
+<div><h3>Tree Mutator</div></h3>
+<div>(<a href='#upgrade-to-tree-mutator'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -10746,7 +11118,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Grill</h3>
+<a id=grill></a>
+<div class=factory-header>
+<div><h3>Grill</div></h3>
+<div>(<a href='#upgrade-to-grill'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -10954,7 +11330,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Soup kitchen</h3>
+<a id=soup-kitchen></a>
+<div class=factory-header>
+<div><h3>Soup kitchen</div></h3>
+<div>(<a href='#upgrade-to-soup-kitchen'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -11078,7 +11458,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Wool Processing</h3>
+<a id=wool-processing></a>
+<div class=factory-header>
+<div><h3>Wool Processing</div></h3>
+<div>(<a href='#upgrade-to-wool-processing'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -11518,7 +11902,11 @@ Repair Factory
 <div>
 <a id=aether-and-advanced-techs></a>
 <h2>Aether and Advanced Techs</h2>
-<h3>Laboratory</h3>
+<a id=laboratory></a>
+<div class=factory-header>
+<div><h3>Laboratory</div></h3>
+<div>(<a href='#upgrade-to-laboratory'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -11642,7 +12030,10 @@ Repair Factory
 <td class=prod-time>24 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-bastion-factory'></a>
+<a href='#bastion-factory'>
 Upgrade to Bastion Factory
+</a>
 </td>
 </tr>
 <tr>
@@ -11673,7 +12064,10 @@ Upgrade to Bastion Factory
 <td class=prod-time>30 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-compactor-basic'></a>
+<a href='#compactor-basic'>
 Upgrade to Compactor Basic
+</a>
 </td>
 </tr>
 <tr>
@@ -11696,7 +12090,10 @@ Upgrade to Compactor Basic
 <td class=prod-time>15 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-printing-press'></a>
+<a href='#printing-press'>
 Upgrade to Printing Press
+</a>
 </td>
 </tr>
 <tr>
@@ -11727,7 +12124,10 @@ Upgrade to Printing Press
 <td class=prod-time>8 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-basic-pylon'></a>
+<a href='#basic-pylon'>
 Upgrade to Basic Pylon
+</a>
 </td>
 </tr>
 <tr>
@@ -11748,18 +12148,27 @@ Upgrade to Basic Pylon
 <td class=prod-time>15 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-redstone-techniques'></a>
+<a href='#redstone-techniques'>
 Upgrade to Redstone Techniques
+</a>
 </td>
 </tr>
 </table>
 </div>
 <div>
-<h3>Basic Pylon / Advanced Pylon / Expert Pylon</h3>
+<div class=factory-header>
+<div><h3>Basic Pylon / Advanced Pylon / Expert Pylon</div></h3>
+<div>(<a href='#upgrade-to-basic-pylon'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Weight<th>Type</th><th>Notes</th>
 </tr>
-<tr><th colspan=6>Basic Pylon</th></tr>
+<tr><th colspan=6>
+<a id=basic-pylon></a>
+Basic Pylon
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -11768,7 +12177,6 @@ Upgrade to Redstone Techniques
 </table>
 </td>
 <td>
-<span class=item-section>Ingredients:</span>
 <span class=item-section>Fuel:</span>
 <table class=item-list>
 <tr>
@@ -11805,7 +12213,7 @@ Extract Aether
 <tr>
 <td>20</td><td>x</td><td>Compacted Nether Quartz Ore</td></tr>
 <tr>
-<td>32</td><td>x</td><td>Compacted Any Wood Log</td></tr>
+<td>32</td><td>x</td><td>Compacted Any Normal Wood Log</td></tr>
 </table>
 <span class=item-section>Fuel:</span>
 <table class=item-list>
@@ -11817,7 +12225,10 @@ Extract Aether
 <td class=weight></td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-advanced-pylon'></a>
+<a href='#advanced-pylon'>
 Upgrade to Advanced Pylon
+</a>
 </td>
 </tr>
 <tr>
@@ -11846,7 +12257,10 @@ Upgrade to Advanced Pylon
 Repair Basic Pylon
 </td>
 </tr>
-<tr><th colspan=6>Advanced Pylon</th></tr>
+<tr><th colspan=6>
+<a id=advanced-pylon></a>
+Advanced Pylon
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -11855,7 +12269,6 @@ Repair Basic Pylon
 </table>
 </td>
 <td>
-<span class=item-section>Ingredients:</span>
 <span class=item-section>Fuel:</span>
 <table class=item-list>
 <tr>
@@ -11914,7 +12327,10 @@ Extract Aether
 <td class=weight></td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-expert-pylon'></a>
+<a href='#expert-pylon'>
 Upgrade to Expert Pylon
+</a>
 </td>
 </tr>
 <tr>
@@ -11943,7 +12359,10 @@ Upgrade to Expert Pylon
 Repair Advanced Pylon
 </td>
 </tr>
-<tr><th colspan=6>Expert Pylon</th></tr>
+<tr><th colspan=6>
+<a id=expert-pylon></a>
+Expert Pylon
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -11952,7 +12371,6 @@ Repair Advanced Pylon
 </table>
 </td>
 <td>
-<span class=item-section>Ingredients:</span>
 <span class=item-section>Fuel:</span>
 <table class=item-list>
 <tr>
@@ -11995,7 +12413,11 @@ Repair Expert Pylon
 </table>
 </div>
 <div>
-<h3>Bastion Factory</h3>
+<a id=bastion-factory></a>
+<div class=factory-header>
+<div><h3>Bastion Factory</div></h3>
+<div>(<a href='#upgrade-to-bastion-factory'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -12069,7 +12491,11 @@ Repair Expert Factory
 </table>
 </div>
 <div>
-<h3>Compactor Basic</h3>
+<a id=compactor-basic></a>
+<div class=factory-header>
+<div><h3>Compactor Basic</div></h3>
+<div>(<a href='#upgrade-to-compactor-basic'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -12181,7 +12607,10 @@ Repair Factory
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-dedicated-compactor'></a>
+<a href='#dedicated-compactor'>
 Upgrade to Dedicated Compactor
+</a>
 </td>
 </tr>
 <tr>
@@ -12210,13 +12639,20 @@ Upgrade to Dedicated Compactor
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-dedicated-de-compactor'></a>
+<a href='#dedicated-de-compactor'>
 Upgrade to Dedicated De-Compactor
+</a>
 </td>
 </tr>
 </table>
 </div>
 <div>
-<h3>Dedicated Compactor</h3>
+<a id=dedicated-compactor></a>
+<div class=factory-header>
+<div><h3>Dedicated Compactor</div></h3>
+<div>(<a href='#upgrade-to-dedicated-compactor'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -12280,7 +12716,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Dedicated De-Compactor</h3>
+<a id=dedicated-de-compactor></a>
+<div class=factory-header>
+<div><h3>Dedicated De-Compactor</div></h3>
+<div>(<a href='#upgrade-to-dedicated-de-compactor'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -12338,7 +12778,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Printing Press</h3>
+<a id=printing-press></a>
+<div class=factory-header>
+<div><h3>Printing Press</div></h3>
+<div>(<a href='#upgrade-to-printing-press'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -12371,7 +12815,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Redstone Techniques</h3>
+<a id=redstone-techniques></a>
+<div class=factory-header>
+<div><h3>Redstone Techniques</div></h3>
+<div>(<a href='#upgrade-to-redstone-techniques'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -12539,7 +12987,10 @@ Repair Factory
 <td class=prod-time>30 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-redstone-electronics'></a>
+<a href='#redstone-electronics'>
 Upgrade to Redstone Electronics
+</a>
 </td>
 </tr>
 <tr>
@@ -12570,13 +13021,20 @@ Upgrade to Redstone Electronics
 <td class=prod-time>30 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-redstone-mechanics'></a>
+<a href='#redstone-mechanics'>
 Upgrade to Redstone Mechanics
+</a>
 </td>
 </tr>
 </table>
 </div>
 <div>
-<h3>Redstone Electronics</h3>
+<a id=redstone-electronics></a>
+<div class=factory-header>
+<div><h3>Redstone Electronics</div></h3>
+<div>(<a href='#upgrade-to-redstone-electronics'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -12780,7 +13238,11 @@ Repair Advanced Factory
 </table>
 </div>
 <div>
-<h3>Redstone Mechanics</h3>
+<a id=redstone-mechanics></a>
+<div class=factory-header>
+<div><h3>Redstone Mechanics</div></h3>
+<div>(<a href='#upgrade-to-redstone-mechanics'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -12889,7 +13351,7 @@ Craft Noteblocks
 <tr>
 <td>48</td><td>x</td><td>Diamond</td></tr>
 <tr>
-<td>32</td><td>x</td><td>Any Wood Log</td></tr>
+<td>32</td><td>x</td><td>Any Normal Wood Log</td></tr>
 </table>
 <span class=item-section>Fuel:</span>
 <table class=item-list>
@@ -13018,7 +13480,11 @@ Repair Advanced Factory
 <div>
 <a id=smelter></a>
 <h2>Smelter</h2>
-<h3>Stone Smelter</h3>
+<a id=stone-smelter></a>
+<div class=factory-header>
+<div><h3>Stone Smelter</div></h3>
+<div>(<a href='#upgrade-to-stone-smelter'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -13145,7 +13611,10 @@ Repair Factory
 <td class=prod-time>15 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-ore-smelter'></a>
+<a href='#ore-smelter'>
 Upgrade to Ore Smelter
+</a>
 </td>
 </tr>
 <tr>
@@ -13166,7 +13635,10 @@ Upgrade to Ore Smelter
 <td class=prod-time>20 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-sand-smelter'></a>
+<a href='#sand-smelter'>
 Upgrade to Sand Smelter
+</a>
 </td>
 </tr>
 <tr>
@@ -13191,7 +13663,10 @@ Upgrade to Sand Smelter
 <td class=prod-time>15 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-brick-smelter'></a>
+<a href='#brick-smelter'>
 Upgrade to Brick Smelter
+</a>
 </td>
 </tr>
 <tr>
@@ -13216,13 +13691,20 @@ Upgrade to Brick Smelter
 <td class=prod-time>30 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-kiln'></a>
+<a href='#kiln'>
 Upgrade to Kiln
+</a>
 </td>
 </tr>
 </table>
 </div>
 <div>
-<h3>Brick Smelter</h3>
+<a id=brick-smelter></a>
+<div class=factory-header>
+<div><h3>Brick Smelter</div></h3>
+<div>(<a href='#upgrade-to-brick-smelter'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -13372,7 +13854,10 @@ Repair Factory
 <td class=prod-time>30 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-stonebrick-smelter'></a>
+<a href='#stonebrick-smelter'>
 Upgrade to Stonebrick Smelter
+</a>
 </td>
 </tr>
 <tr>
@@ -13397,7 +13882,10 @@ Upgrade to Stonebrick Smelter
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-netherbrick-smelter'></a>
+<a href='#netherbrick-smelter'>
 Upgrade to Netherbrick Smelter
+</a>
 </td>
 </tr>
 <tr>
@@ -13426,7 +13914,10 @@ Upgrade to Netherbrick Smelter
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-aquatic-brick-smelter'></a>
+<a href='#aquatic-brick-smelter'>
 Upgrade to Aquatic Brick Smelter
+</a>
 </td>
 </tr>
 <tr>
@@ -13451,7 +13942,10 @@ Upgrade to Aquatic Brick Smelter
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-quartz-factory'></a>
+<a href='#quartz-factory'>
 Upgrade to Quartz Factory
+</a>
 </td>
 </tr>
 <tr>
@@ -13478,13 +13972,20 @@ Upgrade to Quartz Factory
 <td class=prod-time>20 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-fancy-stone-smelter'></a>
+<a href='#fancy-stone-smelter'>
 Upgrade to Fancy Stone Smelter
+</a>
 </td>
 </tr>
 </table>
 </div>
 <div>
-<h3>Aquatic Brick Smelter</h3>
+<a id=aquatic-brick-smelter></a>
+<div class=factory-header>
+<div><h3>Aquatic Brick Smelter</div></h3>
+<div>(<a href='#upgrade-to-aquatic-brick-smelter'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -13650,7 +14151,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Fancy Stone Smelter</h3>
+<a id=fancy-stone-smelter></a>
+<div class=factory-header>
+<div><h3>Fancy Stone Smelter</div></h3>
+<div>(<a href='#upgrade-to-fancy-stone-smelter'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -13783,7 +14288,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Netherbrick Smelter</h3>
+<a id=netherbrick-smelter></a>
+<div class=factory-header>
+<div><h3>Netherbrick Smelter</div></h3>
+<div>(<a href='#upgrade-to-netherbrick-smelter'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -13945,7 +14454,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Quartz Factory</h3>
+<a id=quartz-factory></a>
+<div class=factory-header>
+<div><h3>Quartz Factory</div></h3>
+<div>(<a href='#upgrade-to-quartz-factory'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -14103,7 +14616,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Stonebrick Smelter</h3>
+<a id=stonebrick-smelter></a>
+<div class=factory-header>
+<div><h3>Stonebrick Smelter</div></h3>
+<div>(<a href='#upgrade-to-stonebrick-smelter'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -14292,7 +14809,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Kiln</h3>
+<a id=kiln></a>
+<div class=factory-header>
+<div><h3>Kiln</div></h3>
+<div>(<a href='#upgrade-to-kiln'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -14400,7 +14921,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Ore Smelter</h3>
+<a id=ore-smelter></a>
+<div class=factory-header>
+<div><h3>Ore Smelter</div></h3>
+<div>(<a href='#upgrade-to-ore-smelter'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -14552,7 +15077,10 @@ Repair Factory
 <td class=prod-time>4 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-ore-forge'></a>
+<a href='#ore-forge'>
 Upgrade to Ore Forge
+</a>
 </td>
 </tr>
 <tr>
@@ -14579,7 +15107,10 @@ Upgrade to Ore Forge
 <td class=prod-time>4 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-gem-extractor'></a>
+<a href='#gem-extractor'>
 Upgrade to Gem Extractor
+</a>
 </td>
 </tr>
 <tr>
@@ -14740,7 +15271,11 @@ Break Fossil
 </table>
 </div>
 <div>
-<h3>Gem Extractor</h3>
+<a id=gem-extractor></a>
+<div class=factory-header>
+<div><h3>Gem Extractor</div></h3>
+<div>(<a href='#upgrade-to-gem-extractor'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -15053,7 +15588,11 @@ Repair Advanced Factory
 </table>
 </div>
 <div>
-<h3>Ore Forge</h3>
+<a id=ore-forge></a>
+<div class=factory-header>
+<div><h3>Ore Forge</div></h3>
+<div>(<a href='#upgrade-to-ore-forge'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -15347,7 +15886,11 @@ Repair Advanced Factory
 </table>
 </div>
 <div>
-<h3>Sand Smelter</h3>
+<a id=sand-smelter></a>
+<div class=factory-header>
+<div><h3>Sand Smelter</div></h3>
+<div>(<a href='#upgrade-to-sand-smelter'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -15524,7 +16067,10 @@ Repair Factory
 <td class=prod-time>2 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-glass-blowing-workshop'></a>
+<a href='#glass-blowing-workshop'>
 Upgrade to Glass Blowing Workshop
+</a>
 </td>
 </tr>
 <tr>
@@ -15547,7 +16093,10 @@ Upgrade to Glass Blowing Workshop
 <td class=prod-time>2 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-sandstone-smelter'></a>
+<a href='#sandstone-smelter'>
 Upgrade to Sandstone Smelter
+</a>
 </td>
 </tr>
 <tr>
@@ -15602,18 +16151,27 @@ Upgrade to Sandstone Smelter
 <td class=prod-time>1 hr</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-glass-dying-factory'></a>
+<a href='#glass-dying-factory'>
 Upgrade to Glass Dying Factory
+</a>
 </td>
 </tr>
 </table>
 </div>
 <div>
-<h3>Glass Blowing Workshop / Crystallization Factory</h3>
+<div class=factory-header>
+<div><h3>Glass Blowing Workshop / Crystallization Factory</div></h3>
+<div>(<a href='#upgrade-to-glass-blowing-workshop'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
 </tr>
-<tr><th colspan=5>Glass Blowing Workshop</th></tr>
+<tr><th colspan=5>
+<a id=glass-blowing-workshop></a>
+Glass Blowing Workshop
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -15711,7 +16269,10 @@ Blow Glassbottles
 <td class=prod-time>10 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-crystallization-factory'></a>
+<a href='#crystallization-factory'>
 Upgrade to Crystallization Factory
+</a>
 </td>
 </tr>
 <tr>
@@ -15739,7 +16300,10 @@ Upgrade to Crystallization Factory
 Repair Factory
 </td>
 </tr>
-<tr><th colspan=5>Crystallization Factory</th></tr>
+<tr><th colspan=5>
+<a id=crystallization-factory></a>
+Crystallization Factory
+</th></tr>
 <tr>
 <td>
 <table class=item-list>
@@ -15797,7 +16361,11 @@ Compress Ice into Compressed Ice
 </table>
 </div>
 <div>
-<h3>Glass Dying Factory</h3>
+<a id=glass-dying-factory></a>
+<div class=factory-header>
+<div><h3>Glass Dying Factory</div></h3>
+<div>(<a href='#upgrade-to-glass-dying-factory'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -16749,7 +17317,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Sandstone Smelter</h3>
+<a id=sandstone-smelter></a>
+<div class=factory-header>
+<div><h3>Sandstone Smelter</div></h3>
+<div>(<a href='#upgrade-to-sandstone-smelter'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -17063,7 +17635,11 @@ Repair Factory
 <div>
 <a id=wood-processor></a>
 <h2>Wood Processor</h2>
-<h3>Wood Processor</h3>
+<a id=wood-processor></a>
+<div class=factory-header>
+<div><h3>Wood Processor</div></h3>
+<div>(<a href='#upgrade-to-wood-processor'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -17079,7 +17655,7 @@ Repair Factory
 <span class=item-section>Ingredients:</span>
 <table class=item-list>
 <tr>
-<td>128</td><td>x</td><td>Any Wood Log</td></tr>
+<td>128</td><td>x</td><td>Any Normal Wood Log</td></tr>
 </table>
 <span class=item-section>Fuel:</span>
 <table class=item-list>
@@ -17161,7 +17737,10 @@ Repair Factory
 <td class=prod-time>15 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-carpentry'></a>
+<a href='#carpentry'>
 Upgrade to Carpentry
+</a>
 </td>
 </tr>
 <tr>
@@ -17184,7 +17763,10 @@ Upgrade to Carpentry
 <td class=prod-time>15 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-fine-woodworking'></a>
+<a href='#fine-woodworking'>
 Upgrade to Fine Woodworking
+</a>
 </td>
 </tr>
 <tr>
@@ -17205,13 +17787,20 @@ Upgrade to Fine Woodworking
 <td class=prod-time>30 min</td>
 <td>UPGRADE</td>
 <td>
+<a id='upgrade-to-coal-burner'></a>
+<a href='#coal-burner'>
 Upgrade to Coal Burner
+</a>
 </td>
 </tr>
 </table>
 </div>
 <div>
-<h3>Carpentry</h3>
+<a id=carpentry></a>
+<div class=factory-header>
+<div><h3>Carpentry</div></h3>
+<div>(<a href='#upgrade-to-carpentry'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -17371,7 +17960,11 @@ Create Crate
 </table>
 </div>
 <div>
-<h3>Coal Burner</h3>
+<a id=coal-burner></a>
+<div class=factory-header>
+<div><h3>Coal Burner</div></h3>
+<div>(<a href='#upgrade-to-coal-burner'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -17387,7 +17980,7 @@ Create Crate
 <span class=item-section>Ingredients:</span>
 <table class=item-list>
 <tr>
-<td>512</td><td>x</td><td>Any Wood Log</td></tr>
+<td>512</td><td>x</td><td>Any Normal Wood Log</td></tr>
 </table>
 <span class=item-section>Fuel:</span>
 <table class=item-list>
@@ -17412,7 +18005,7 @@ Burn Charcoal from Normal Logs
 <span class=item-section>Ingredients:</span>
 <table class=item-list>
 <tr>
-<td>512</td><td>x</td><td>Any Wood Plank</td></tr>
+<td>512</td><td>x</td><td>Acacia or Dark Oak Log</td></tr>
 </table>
 <span class=item-section>Fuel:</span>
 <table class=item-list>
@@ -17479,7 +18072,11 @@ Repair Factory
 </table>
 </div>
 <div>
-<h3>Fine Woodworking</h3>
+<a id=fine-woodworking></a>
+<div class=factory-header>
+<div><h3>Fine Woodworking</div></h3>
+<div>(<a href='#upgrade-to-fine-woodworking'>Show Upgrade Recipe</a>)</div>
+</div>
 <table class=recipe-list>
 <tr>
 <th>Output</th><th>Input</th><th>Production Time</th><th>Type</th><th>Notes</th>
@@ -17611,7 +18208,7 @@ Repair Factory
 </tr>
 </table>
 </div>
-<p>Generated on 2016-07-21 17:29:30</p>
+<p>Generated on 2016-07-21 21:26:19</p>
 </div>
 </body>
 </html>
